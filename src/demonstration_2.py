@@ -21,3 +21,10 @@ class LinkedListNode():
 def reverse(head_of_list):
     # Your code here
 
+
+
+
+head=LinkedListNode(1)
+head.next=LinkedListNode(2)
+head.next.next=LinkedListNode(3)
+head.next.next.next=LinkedListNode(4)

@@ -30,6 +30,18 @@ class LinkedListNode():
 
 def delete_node(delete_this_node):
     # Your code here
+    #copy all of next node into the current node we are "deleting"
+    next_node=delete_this_node
+    #start with the value
+    if next_node is not None:
+        delete_this_node.value=next_node.value
+        #skip over the next_node in our linked list
+        delete_this_node.next=next_node.next
+    else:
+        print("Sorry we cannot delete the last node using this technique")
+
+
+
 
 
 x = LinkedListNode('X')
@@ -39,4 +51,4 @@ z = LinkedListNode('Z')
 x.next = y
 y.next = z
 
-delete_node(y)
+print (delete_node(x))
